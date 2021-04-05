@@ -123,22 +123,22 @@ Goal:
     Wydajnosc:
       preferences: 
         pairwiseFunction:
-          function(a1, a2) min(9, max(1/9, a2$ram/a1$ram))
+          function(a1, a2) min(9, max(1/9, a1$ram/a2$ram))
       children: *alternatives
     Jakosc:
       preferences: 
         pairwiseFunction:
-          function(a1, a2) min(9, max(1/9, a2$ocena/a1$ocena))
+          function(a1, a2) min(9, max(1/9, a1$ocena/a2$ocena))
       children: *alternatives
     Cena:
       preferences: 
         pairwiseFunction:
-          function(a1, a2) min(9, max(1/9, a2$cena/a1$cena))
+          function(a1, a2) min(9, max(1/9, a1$cena/a2$cena))
       children: *alternatives
     Styl:
       preferences: 
         pairwiseFunction:
-          function(a1, a2) min(9, max(1/9, a2$aparat/a1$aparat))
+          function(a1, a2) min(9, max(1/9, a1$aparat/a2$aparat))
       children: *alternatives
 
 
